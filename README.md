@@ -6,9 +6,8 @@ Sistema de gerenciamento de cardápio desenvolvido com React e Vite
 
 ## Sumário
 1. [Tecnologias utilizadas](#tecnologias-utilizadas)
-2. [Funcionalidades](#funcionalidades)
-3. [Estrutura do projeto](#estrutura-do-projeto)
-4. [Como utilizar a aplicação](#como-utilizar-a-aplicação)
+2. [Estrutura do projeto](#estrutura-do-projeto)
+3. [Como utilizar a aplicação](#como-utilizar-a-aplicação)
 
 ---
 
