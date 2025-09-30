@@ -16,7 +16,7 @@ body {
     gap: 16px;
 }
 
-.container button {
+.container .btn-add {
     background-color: #0275d8;
     color: white;
     font-weight: bold;
@@ -28,9 +28,10 @@ body {
     border: none;
     border-radius: 10px;
     padding: 10px;
+    cursor: pointer;
 }
 
-.container button:hover {
+.container .btn-add:hover {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 7px 0px;
     transform: scale(1.1);
 }

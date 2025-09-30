@@ -8,11 +8,30 @@ const postData = async (data) => {
     return response.data
 }
 
+const updateData = async ({ id, data }) => {
+    const response = await axios.put(API_URL + `/food/${id}`, data)
+    return response.data
+}
+
 export function useFoodDataMutate() {
     const queryClient = useQueryClient()
     
     const mutate = useMutation({
         mutationFn: postData,
+        retry: 2,
+        onSuccess: () => {
+            queryClient.invalidateQueries(['food-data'])
+        }
+    })
+
+    return mutate
+}
+
+export function useFoodDataUpdate() {
+    const queryClient = useQueryClient()
+    
+    const mutate = useMutation({
+        mutationFn: updateData,
         retry: 2,
         onSuccess: () => {
             queryClient.invalidateQueries(['food-data'])
