@@ -28,7 +28,7 @@ export function CreateModal({ isOpen, setModalOpen }) {
     }
 
     useEffect(() => {
-        if(isSuccess) {
+        if (isSuccess) {
             setModalOpen(false)
         }
     }, [isSuccess, setModalOpen])
@@ -42,10 +42,12 @@ export function CreateModal({ isOpen, setModalOpen }) {
                     <Input label="Preço" value={price} updateValue={setPrice} />
                     <Input label="Imagem" value={image} updateValue={setImage} />
                 </form>
-                <button onClick={submit} className="btn-secondary">
-                    {isLoading ? 'Postando...' : 'Postar'}
-                </button>
-                <button onClick={() => setModalOpen(false)} className="btn-primary">Cancelar</button>
+                <div className="btn-container">
+                    <button onClick={submit} className="btn-secondary">
+                        {isLoading ? 'Postando...' : 'Postar'}
+                    </button>
+                    <button onClick={() => setModalOpen(false)} className="btn-primary">Cancelar</button>
+                </div>
             </div>
         </div>
     )

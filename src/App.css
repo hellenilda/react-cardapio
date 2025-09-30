@@ -24,6 +24,10 @@ body {
     bottom: 16px;
     right: 24px;
     transition: all 0.1s linear 0.1s;
+    font-size: 20px;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
 }
 
 .container button:hover {

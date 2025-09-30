@@ -55,11 +55,55 @@
 
 .modal-overlay .modal-body .btn-secondary {
     position: initial;
-    width: 100%;
+    width: 50%;
     margin-top: 32px;
+    margin-right: 25px;
 }
 
 .modal-overlay .modal-body .btn-secondary:hover {
     background-color: #3a44f8;
     transform: scale(1);
+}
+
+.modal-overlay .modal-body .btn-container {
+    display: flex;
+    gap: 16px;
+    width: 100%;
+    margin-top: 32px;
+}
+
+.modal-overlay .modal-body .btn-secondary {
+    position: initial;
+    width: 50%;
+    margin-top: 0;
+    margin-right: 0;
+    background-color: #0275d8;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-overlay .modal-body .btn-primary {
+    position: initial;
+    width: 50%;
+    background-color: #6c757d;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.modal-overlay .modal-body .btn-secondary:hover {
+    background-color: #025aa5;
+    transform: scale(1.05);
+}
+
+.modal-overlay .modal-body .btn-primary:hover {
+    background-color: #545b62;
+    transform: scale(1.05);
 }

@@ -24,7 +24,7 @@ function App() {
         />)}
       </div>
       {isModalOpen && <CreateModal isOpen={isModalOpen} setModalOpen={setIsModalOpen} />}
-      <button onClick={handleOpenModal}>Novo</button>
+      <button onClick={handleOpenModal}>+</button>
     </div>
   )
 }
